@@ -15,6 +15,20 @@ TODO:
 """
 
 def main():
+   list=[]
+   stop = False
+    while stop == False:
+      number = input("enter stop if you are done:")
+      if number != "stop":
+        number = int(number)
+        list.append(number)
+      else:
+        stop = True
+   sum = sum(list)
+   length = len(list)
+   total = sum/length
+   print(total)
+
     pass
 
 
