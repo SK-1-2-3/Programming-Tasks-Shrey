@@ -13,9 +13,21 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+    sentence = input("enter a sentence:")
+words = []
+word = ""
+for character in sentence:
+    if character == " ":
+        words.append(word)
+        word = ""
+    else:
+        word = word + character
+
+words.append(word)
+length = len(words)
+print(f"there are {length} words in this sentence")
+print(f"the words were: {words}")
+
     pass
 
 
