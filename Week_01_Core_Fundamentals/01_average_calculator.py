@@ -19,7 +19,7 @@ def main():
    stop = False
     while stop == False:
       number = input("enter stop if you are done:")
-      if number != "stop":
+      if number.lower() != "stop":
         number = int(number)
         list.append(number)
       else:
