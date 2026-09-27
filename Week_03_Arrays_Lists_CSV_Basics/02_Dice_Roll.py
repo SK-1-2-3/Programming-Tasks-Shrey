@@ -16,9 +16,29 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+    import random
+amount = int(input("How many times do you want to roll the dice? "))
+counts = 0
+total = []
+count = [0 , 0 , 0 , 0 , 0 , 0]
+while counts != amount:
+    dice = random.randint(1,6)
+    print(dice)
+    total.append(dice)
+    counts = counts + 1
+    count[dice - 1] = count[dice - 1] + 1
+print("Enter 1 if you want to see: Totals for each number")
+print("Enter 2 if you want to see: Average dice roll")
+what_see = int(input("What number? "))
+sum = sum(total)
+if what_see == 1:
+    for i in range(6):
+        print(f"You have rolled {i + 1}: {count[i]} times")
+elif what_see == 2:
+    average = sum/amount
+    print("The average number is:", average)
+
+
     pass
 
 
