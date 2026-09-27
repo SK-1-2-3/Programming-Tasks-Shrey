@@ -13,6 +13,21 @@ TODO:
 """
 
 def main():
+<<<<<<< HEAD
+=======
+import random
+numbers = random.randint(1, 50)
+list = random.sample(range(1, 100), numbers)
+min = list[0]
+max = list[0]
+for i in list:
+    if min > i:
+        min = i
+    elif max < i:
+        max = i
+print("the lowest number is:", min)
+print("the highest number is:", max)
+>>>>>>> 369d46c25d11babdf2a9e5775504726f56a370c4
 
     pass
 def find_min_max(values):

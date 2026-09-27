@@ -12,9 +12,29 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+   shopping_list = []
+   finished = False
+   while finished == False:
+        item = input("Enter what item you want to add to the list, enter 'done' when you are finished : ")
+        if item.lower() != "done":
+            shopping_list.append(item)
+        else:
+            finished = True
+
+    print("This is your shopping list:")
+    print(shopping_list)
+
+    change = input("Do you want to change anything? yes or no :")
+    if change.lower() == "yes":
+        num = int(input("What item number do you want to change? "))
+        item_change = input("What do you want to change it to? ")
+        shopping_list[num - 1] = item_change
+        print("This is your new list:")
+        print(shopping_list)
+    else:
+        print("Ok")
+
+
     pass
 
 

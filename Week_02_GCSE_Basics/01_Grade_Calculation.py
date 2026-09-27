@@ -15,9 +15,21 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+   def get_grade(score):
+    if score >= 80 and score <= 100:
+        print("You got a grade A")
+    elif score >= 60 and score <= 79:
+        print("You got a grade B")
+    elif score >= 40 and score <= 59:
+        print("You got a grade C")
+    elif score >= 0 and score <= 39:
+        print("You got a grade D")
+    else:
+        print("Enter a vaild percentage")
+
+grade = int(input("Enter the percentage you got :"))
+get_grade(grade)
+
     pass
 
 
