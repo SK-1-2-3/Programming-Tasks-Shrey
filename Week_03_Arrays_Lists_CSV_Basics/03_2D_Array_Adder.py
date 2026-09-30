@@ -13,9 +13,36 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+   rows, cols = 3, 3
+array = [[0 for i in range(cols)] for i in range(rows)]
+for i in array:
+          print(i)
+print("1. Append a new row, adding an item")
+print("2. Read all current values")
+print("3. Delete a chosen item")
+answer = int(input("Enter choice from 1 to 3"))
+if answer == 1:
+          new_row = []
+          adding = input("what do you want to add? ")
+          new_row.append(adding)
+          array.append(new_row)
+          for i in array:
+              print(i)
+elif answer == 2:
+    for i in array:
+        print(i)
+
+elif answer == 3:
+    row = int(input("what row is the item you want to delete?"))
+    column = int(input("what column is the item you want to delete?"))
+    array[row][column] = 0
+    for i in array:
+        print(i)
+
+
+
+
+
     pass
 
 
