@@ -13,9 +13,20 @@ TODO:
 """
 
 def main():
-    # TODO: Write demonstration/testing code
-    # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
-    # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
+  import random
+amount = int(input("How many number should we sort: "))
+list = []
+for i in range(0,amount):
+    number = random.randint(1,100)
+    list.append(number)
+print("list before: ", list)
+for i in range(len(list)):
+    for x in range(0,len(list)-1):
+        if list[x] > list[x+1]:
+            list[x], list[x+1] = list[x+1], list[x]
+print("list after: ", list)
+
+
     pass
 
 
