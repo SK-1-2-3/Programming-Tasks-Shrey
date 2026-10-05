@@ -16,6 +16,7 @@ def main():
   import random
 amount = int(input("How many number should we sort: "))
 list = []
+swaps = 0
 for i in range(0,amount):
     number = random.randint(1,100)
     list.append(number)
@@ -24,8 +25,10 @@ for i in range(len(list)):
     for x in range(0,len(list)-1):
         if list[x] > list[x+1]:
             list[x], list[x+1] = list[x+1], list[x]
+            swaps += 1
 print("list after: ", list)
 
+print(f"There were {swaps} swaps")
 
     pass
 
