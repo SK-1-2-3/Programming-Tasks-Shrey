@@ -15,19 +15,23 @@ TODO:
 """
 
 def main():
-   list=[]
-   stop = False
+   def average_calc():
+    list=[]
+    stop = False
     while stop == False:
-      number = input("enter stop if you are done:")
-      if number.lower != "stop":
-        number = int(number)
-        list.append(number)
-      else:
-        stop = True
-   sum = sum(list)
-   length = len(list)
-   total = sum/length
-   print(total)
+        number = input("enter stop if you are done:")
+        if number.lower() != "stop":
+            number = int(number)
+            list.append(number)
+        else:
+            stop = True
+    add = sum(list)
+    length = len(list)
+    total = add/length
+    print(total)
+
+average_calc()
+
 
     pass
 
