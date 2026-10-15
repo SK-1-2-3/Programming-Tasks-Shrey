@@ -13,12 +13,17 @@ TODO:
 """
 
 def main():
-   list=[]
-for i in range (6):
- num = int(input())
- list.append(num)
-for i in range (5,-1,-1):
- print(f"the numbers you enetered revserse is: {list[i]}")
+def reverse_array():
+    list=[]
+    for i in range (6):
+     num = int(input("Enter number: "))
+     list.append(num)
+    for i in range (5,-1,-1):
+     print(f"the numbers you enetered revserse is: {list[i]}")
+
+
+reverse_array()
+
 
 
 
