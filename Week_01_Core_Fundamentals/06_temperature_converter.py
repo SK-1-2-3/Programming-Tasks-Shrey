@@ -13,18 +13,19 @@ TODO:
 """
 
 def main():
-    celsius = input("enter temperature you want to convert, type stop when finished:")
-    while celsius != "stop":
-      if celsius.isdigit():
-       celsius = int(celsius)
-       fahrenheit = (celsius * 1.8) + 32
-       print("your temperature in fahrenheit is", fahrenheit)
-      else:
-       print("error enter a number")
+    def temp_converter():
+        celsius = input("enter temperature you want to convert, type stop when finished:")
+        while celsius != "stop":
+          if celsius.isdigit():
+           celsius = int(celsius)
+           fahrenheit = (celsius * 1.8) + 32
+           print("your temperature in fahrenheit is", fahrenheit)
+          else:
+           print("error enter a number")
 
-      celsius = input("enter temperature you want to convert, type stop when finished:")
+          celsius = input("enter temperature you want to convert, type stop when finished:")
 
-    print("Bye")
+        print("Bye")
 
 
 
