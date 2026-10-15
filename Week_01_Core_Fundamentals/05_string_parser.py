@@ -13,20 +13,21 @@ TODO:
 """
 
 def main():
+def string_parser():
     sentence = input("enter a sentence:")
-words = []
-word = ""
-for character in sentence:
-    if character == " ":
-        words.append(word)
-        word = ""
-    else:
-        word = word + character
+    words = []
+    word = ""
+    for character in sentence:
+        if character == " ":
+            words.append(word)
+            word = ""
+        else:
+            word = word + character
 
-words.append(word)
-length = len(words)
-print(f"there are {length} words in this sentence")
-print(f"the words were: {words}")
+    words.append(word)
+    length = len(words)
+    print(f"there are {length} words in this sentence")
+    print(f"the words were: {words}")
 
     pass
 
